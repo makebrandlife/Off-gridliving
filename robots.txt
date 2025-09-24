@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Sitemap: https://makebrandlife.github.io/Off-gridliving/sitemap.xml
+
+# Allow CSS and JavaScript
+User-agent: *
+Allow: .css$
+Allow: .js$
+
+# Disallow admin pages (if you have any)
+Disallow: /admin/
+Disallow: /private/
