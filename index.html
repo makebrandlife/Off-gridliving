@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustainable Off-Grid Living | Energy Independence & Eco-Friendly Homesteading</title>
+  <meta name="description" content="Complete guide to sustainable off-grid living. Learn about solar power systems, rainwater harvesting, composting toilets, and eco-building for true self-reliance.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://username.github.io/">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sustainable Off-Grid Living | Energy Independence & Eco-Friendly Homesteading">
+  <meta property="og:description" content="Complete guide to sustainable off-grid living with solar power, rainwater harvesting, and eco-building techniques.">
+  <meta property="og:url" content="https://username.github.io/">
+  <meta property="og:site_name" content="Sustainable Off-Grid Living">
+  <meta property="og:image" content="https://username.github.io/images/off-grid-preview.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sustainable Off-Grid Living | Energy Independence">
+  <meta name="twitter:description" content="Complete guide to sustainable off-grid living with solar power, rainwater harvesting, and eco-building.">
+  <meta name="twitter:image" content="https://username.github.io/images/off-grid-preview.jpg">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --color-bg: #FAFAFA;
+      --color-text: #212121;
+      --color-primary: #2E7D32;
+      --color-primary-dark: #1B5E20;
+      --color-accent: #FFC107;
+      --color-heading: #1B5E20;
+      --color-card-bg: #FFFFFF;
+      --color-border: #E0E0E0;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    [data-theme="dark"] {
+      --color-bg: #121212;
+      --color-text: #E0E0E0;
+      --color-primary: #4CAF50;
+      --color-primary-dark: #388E3C;
+      --color-accent: #FFB300;
+      --color-heading: #A5D6A7;
+      --color-card-bg: #1E1E1E;
+      --color-border: #424242;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.4);
+    }
+    
+    * { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+    }
+    
+    html { 
+      font-family: 'Open Sans', sans-serif; 
+      background: var(--color-bg); 
+      color: var(--color-text); 
+      transition: background 0.3s, color 0.3s; 
+      scroll-behavior: smooth;
+      line-height: 1.6;
+    }
+    
+    h1, h2, h3, h4 { 
+      font-family: 'Merriweather', serif; 
+      color: var(--color-heading); 
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+    
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; margin-top: 2rem; }
+    h3 { font-size: 1.5rem; }
+    
+    p { margin-bottom: 1.5rem; }
+    
+    a { 
+      color: var(--color-primary); 
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    a:hover { color: var(--color-accent); }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    
+    /* Header & Navigation */
+    header {
+      background: var(--color-primary);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+    
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo i {
+      margin-right: 0.5rem;
+      font-size: 2rem;
+    }
+    
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    
+    nav li {
+      margin-left: 1.5rem;
+    }
+    
+    nav a {
+      color: white;
+      font-weight: 600;
+      padding: 0.5rem 0;
+      position: relative;
+    }
+    
+    nav a:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-accent);
+      transition: width 0.3s;
+    }
+    
+    nav a:hover:after {
+      width: 100%;
+    }
+    
+    .theme-toggle {
+      background: var(--color-accent);
+      color: #333;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      transition: transform 0.2s;
+    }
+    
+    .theme-toggle:hover {
+      transform: translateY(-2px);
+    }
+    
+    .theme-toggle i {
+      margin-right: 0.5rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 6rem 1rem;
+      margin-bottom: 3rem;
+    }
+    
+    .hero h1 {
+      color: white;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background: var(--color-accent);
+      color: #333;
+      padding: 0.8rem 2rem;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      color: #333;
+    }
+    
+    /* Main Content */
+    main {
+      padding: 2rem 0;
+    }
+    
+    .content-section {
+      margin-bottom: 4rem;
+    }
+    
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .section-header h2 {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+    
+    .section-header h2:after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 3px;
+      background: var(--color-accent);
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    /* Cards */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .card {
+      background: var(--color-card-bg);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+    }
+    
+    .card-img {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .card-content {
+      padding: 1.5rem;
+    }
+    
+    .card h3 {
+      margin-bottom: 0.5rem;
+    }
+    
+    .card p {
+      font-size: 0.95rem;
+    }
+    
+    /* Pillars Section */
+    .pillar {
+      display: flex;
+      margin-bottom: 3rem;
+      align-items: center;
+      background: var(--color-card-bg);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    
+    .pillar-img {
+      flex: 0 0 40%;
+      height: 250px;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .pillar-content {
+      flex: 1;
+      padding: 2rem;
+    }
+    
+    .pillar:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    
+    /* FAQ Section */
+    .faq-item {
+      margin-bottom: 1rem;
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .faq-question {
+      padding: 1.5rem;
+      background: var(--color-card-bg);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+    }
+    
+    .faq-answer {
+      padding: 0 1.5rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s, padding 0.3s;
+    }
+    
+    .faq-item.active .faq-answer {
+      padding: 1.5rem;
+      max-height: 500px;
+    }
+    
+    /* Quora Section */
+    .quora-section {
+      background: var(--color-card-bg);
+      border-radius: 8px;
+      padding: 2rem;
+      margin: 3rem 0;
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--color-accent);
+    }
+    
+    .quora-section h3 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    
+    .quora-section h3 i {
+      color: #b92b27;
+      margin-right: 0.5rem;
+      font-size: 1.8rem;
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--color-primary-dark);
+      color: white;
+      padding: 3rem 0 1.5rem;
+    }
+    
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .footer-column h3 {
+      color: white;
+      margin-bottom: 1.5rem;
+      font-size: 1.3rem;
+    }
+    
+    .footer-column ul {
+      list-style: none;
+    }
+    
+    .footer-column li {
+      margin-bottom: 0.8rem;
+    }
+    
+    .footer-column a {
+      color: #E0E0E0;
+    }
+    
+    .footer-column a:hover {
+      color: var(--color-accent);
+    }
+    
+    .quora-link {
+      display: inline-flex;
+      align-items: center;
+      background: #b92b27;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      margin-top: 1rem;
+      transition: background 0.3s;
+    }
+    
+    .quora-link:hover {
+      background: #a02420;
+      color: white;
+    }
+    
+    .quora-link i {
+      margin-right: 0.5rem;
+    }
+    
+    .copyright {
+      text-align: center;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.9rem;
+      color: #BDBDBD;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      nav ul {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      nav li {
+        margin: 0 0.5rem 0.5rem;
+      }
+      
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      
+      .pillar, .pillar:nth-child(even) {
+        flex-direction: column;
+      }
+      
+      .pillar-img {
+        width: 100%;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <i class="fas fa-leaf"></i>
+          <span>OffGrid Living</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#pillars">Pillars</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle">
+          <i class="fas fa-moon"></i>
+          <span>Dark Mode</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Sustainable Off-Grid Living</h1>
+      <p>Discover how to create an independent, eco-friendly homestead with renewable energy, rainwater harvesting, and sustainable building practices.</p>
+      <a href="#about" class="cta-button">Begin Your Journey</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="about" class="content-section">
+      <div class="section-header">
+        <h2>About Sustainable Off-Grid Living</h2>
+        <p>True independence through eco-conscious choices</p>
+      </div>
+      
+      <p>Sustainable off-grid living means powering your home independently of public utilities using renewable energy, harvesting your own water, and managing waste on-site. It's about reducing bills, shrinking your carbon footprint, and gaining true self-reliance.</p>
+      
+      <p>By installing high-efficiency solar panels and deep-cycle batteries, you achieve true energy independence and lower utility bills. Rainwater harvesting systems paired with UV filtration guarantee safe, off-grid water purification.</p>
+      
+      <p>Composting toilets and greywater systems minimize waste and nourish your permaculture garden. Eco-friendly building materials like reclaimed timber, straw-bale insulation, and rammed earth walls reduce your ecological footprint and improve thermal efficiency.</p>
+      
+      <p>This lifestyle isn't just about survival—it's a path to self-sufficiency, resilience, and harmony with the land.</p>
+    </section>
+
+    <section id="pillars" class="content-section">
+      <div class="section-header">
+        <h2>The Six Pillars of Off-Grid Living</h2>
+        <p>Essential components for a successful sustainable lifestyle</p>
+      </div>
+      
+      <div class="pillar">
+        <div class="pillar-img" style="background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');"></div>
+        <div class="pillar-content">
+          <h3>Philosophy & Mindset</h3>
+          <p>Before technical implementation, adopting the right mindset is crucial. Off-grid living requires self-reliance, problem-solving skills, and a commitment to simplicity. It's about understanding your consumption patterns and learning to work with nature rather than against it.</p>
+        </div>
+      </div>
+      
+      <div class="pillar">
+        <div class="pillar-img" style="background-image: url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');"></div>
+        <div class="pillar-content">
+          <h3>Shelter & Building Design</h3>
+          <p>Your home is your primary tool for efficiency. Proper orientation, super-insulation, thermal mass, and air tightness dramatically reduce energy needs. Sustainable materials like reclaimed wood, straw bales, and rammed earth create healthy, efficient living spaces.</p>
+        </div>
+      </div>
+      
+      <div class="pillar">
+        <div class="pillar-img" style="background-image: url('https://images.unsplash.com/photo-1545569356-187fb45e6bd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');"></div>
+        <div class="pillar-content">
+          <h3>Water Systems</h3>
+          <p>Water independence comes from wells, springs, or rainwater harvesting. Efficient storage, filtration, and purification systems ensure safe drinking water. Greywater systems and composting toilets minimize waste and maximize resource utilization.</p>
+        </div>
+      </div>
+      
+      <div class="pillar">
+        <div class="pillar-img" style="background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');"></div>
+        <div class="pillar-content">
+          <h3>Energy Systems</h3>
+          <p>Solar photovoltaic systems are the most common choice, supplemented by wind or micro-hydro where feasible. Lithium-ion batteries provide efficient energy storage. A backup generator ensures reliability during extended cloudy periods.</p>
+        </div>
+      </div>
+      
+      <div class="pillar">
+        <div class="pillar-img" style="background-image: url('https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');"></div>
+        <div class="pillar-content">
+          <h3>Food Production</h3>
+          <p>Growing your own food completes the cycle of self-sufficiency. Permaculture principles, season extension techniques, and food preservation methods ensure year-round nourishment. Small livestock like chickens and bees enhance food security.</p>
+        </div>
+      </div>
+      
+      <div class="pillar">
+        <div class="pillar-img" style="background-image: url('https://images.unsplash.com/photo-1585493303116-597be50d9b0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');"></div>
+        <div class="pillar-content">
+          <h3>Waste Management</h3>
+          <p>In off-grid living, waste becomes a resource. Composting transforms organic matter into fertile soil. Careful separation and minimal packaging reduce landfill contributions. The goal is a circular system where outputs become inputs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="content-section">
+      <div class="section-header">
+        <h2>Essential Resources</h2>
+        <p>Tools and knowledge for your off-grid journey</p>
+      </div>
+      
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');"></div>
+          <div class="card-content">
+            <h3>Recommended Books</h3>
+            <p>Essential reading including "The Encyclopedia of Country Living" and "The Self-Sufficient Life and How to Live It" for comprehensive guidance.</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1588690154757-badf4648f5d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');"></div>
+          <div class="card-content">
+            <h3>Equipment Guides</h3>
+            <p>Detailed reviews of solar panels, batteries, water pumps, and other essential equipment for building your off-grid systems.</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');"></div>
+          <div class="card-content">
+            <h3>Practical Tutorials</h3>
+            <p>Step-by-step guides for installing solar systems, building rainwater collection, and implementing sustainable practices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="quora-section">
+      <h3><i class="fab fa-quora"></i> My Answer on Quora</h3>
+      <p><strong>What is it like to live off the grid?</strong></p>
+      <p>Living off-grid is a transformative experience that shifts your relationship with resources, time, and the natural world. It's not just about disconnecting from utilities but connecting more deeply with your environment.</p>
+      <p>You become acutely aware of energy consumption, water usage, and waste production. There's a profound satisfaction in generating your own power, collecting rainwater, and growing your own food. Challenges become opportunities for learning and innovation.</p>
+      <p>While it requires more physical work and planning, the rewards include unparalleled independence, resilience, and a lighter ecological footprint.</p>
+      <a href="https://www.quora.com/What-is-it-like-to-live-off-the-grid-1/answer/Quor-A-5?ch=15&oid=1477743885354481&share=e224e9a1&srid=5CHV1N&target_type=answer" class="quora-link" target="_blank">
+        <i class="fab fa-quora"></i> Read the full answer on Quora
+      </a>
+    </div>
+
+    <section id="faq" class="content-section">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to common off-grid living questions</p>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>How much does it cost to set up an off-grid system?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Costs vary widely based on location, energy needs, and desired comfort level. A basic solar system might start around $10,000, while a complete setup with water systems and high-efficiency home could exceed $50,000. The key is to start with an energy audit to determine your actual needs.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Is off-grid living legal everywhere?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Regulations vary by location. Some areas have restrictions on rainwater collection, composting toilets, or building codes that may challenge off-grid aspirations. Always research local zoning laws, building codes, and water rights before purchasing property.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Can I still have modern comforts off-grid?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Absolutely! With proper system design, you can enjoy refrigeration, internet, and most modern appliances. The key is selecting energy-efficient models and sizing your system appropriately. Many off-grid homes are indistinguishable from grid-connected ones in terms of comfort.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>OffGrid Living</h3>
+          <p>Your comprehensive guide to sustainable, self-reliant living through renewable energy and eco-friendly practices.</p>
+          <a href="https://www.quora.com/profile/Your-Name" class="quora-link" target="_blank">
+            <i class="fab fa-quora"></i> Follow on Quora
+          </a>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#pillars">Pillars</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Solar Power Guide</a></li>
+            <li><a href="#">Water Harvesting</a></li>
+            <li><a href="#">Sustainable Building</a></li>
+            <li><a href="#">Food Production</a></li>
+            <li><a href="#">Equipment Reviews</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li><i class="fas fa-envelope"></i> learnconow@gmail.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> Based in the Pacific Northwest</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2025 Sustainable Off-Grid Living. All rights reserved. • <a href="/privacy.html" style="color: #BDBDBD;">Privacy Policy</a> • <a href="/sitemap.xml" style="color: #BDBDBD;">Sitemap</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "url": "https://username.github.io/",
+        "name": "Sustainable Off-Grid Living",
+        "description": "Complete guide to sustainable off-grid living with renewable energy, rainwater harvesting, and eco-building techniques.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "OffGrid Living"
+        }
+      },
+      {
+        "@type": "Article",
+        "headline": "About Sustainable Off-Grid Living",
+        "author": {
+          "@type": "Person",
+          "name": "Your Name"
+        },
+        "datePublished": "2025-09-24",
+        "articleBody": "Sustainable off-grid living means powering your home independently of public utilities using renewable energy, harvesting your own water, and managing waste on-site. It's about reducing bills, shrinking your carbon footprint, and gaining true self-reliance.",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://username.github.io/#about"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does it cost to set up an off-grid system?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Costs vary widely based on location, energy needs, and desired comfort level. A basic solar system might start around $10,000, while a complete setup with water systems and high-efficiency home could exceed $50,000."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is off-grid living legal everywhere?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Regulations vary by location. Some areas have restrictions on rainwater collection, composting toilets, or building codes that may challenge off-grid aspirations."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    updateThemeButton(currentTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const nextTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', nextTheme);
+      localStorage.setItem('theme', nextTheme);
+      updateThemeButton(nextTheme);
+    });
+
+    function updateThemeButton(theme) {
+      const icon = themeToggle.querySelector('i');
+      const text = themeToggle.querySelector('span');
+      
+      if (theme === 'light') {
+        icon.className = 'fas fa-moon';
+        text.textContent = 'Dark Mode';
+      } else {
+        icon.className = 'fas fa-sun';
+        text.textContent = 'Light Mode';
+      }
+    }
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      
+      question.addEventListener('click', () => {
+        // Close all other items
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('active');
+          }
+        });
+        
+        // Toggle current item
+        item.classList.toggle('active');
+      });
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        window.scrollTo({
+          top: targetElement.offsetTop - 80,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
